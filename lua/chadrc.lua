@@ -6,7 +6,7 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = "gruvbox",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
@@ -17,10 +17,10 @@ M.base46 = {
 M.nvdash = {
   load_on_startup = true,
   buttons = {
-    { txt = "󰙅 Explorer", keys = "leader e", cmd = "NvimTreeFocus" },
+    { txt = "󰙅 Explorer", keys = "e", cmd = "CloseDashboardAndOpenFileExplorer" },
     { txt = " Find Files", keys = "tf", cmd = "Telescope find_files" },
     { txt = " Find Word", keys = "tw", cmd = "Telescope live_grep" },
-    { txt = "󱑁 Recent Files", keys = "h", cmd = "Telescope oldfiles" },
+    { txt = "󱑁 Recent Files", keys = "tr", cmd = "Telescope oldfiles" },
     { txt = "󰌌 Mappings", keys = "m", cmd = "NvCheatsheet" },
     { txt = "󰈆 Quit", keys = "q", cmd = "qa!" },
   },
